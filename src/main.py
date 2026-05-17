@@ -9,7 +9,7 @@ canal = CanalNoticias()
 suscriptor_email = SuscriptorEmail("usuario@example.com")
 suscriptor_sms = SuscriptorSMS("+1234567890")
 
-# Suscribir ambos al canal
+# Suscribir ambos al canal xd
 canal.suscribir(suscriptor_email)
 canal.suscribir(suscriptor_sms)
 
