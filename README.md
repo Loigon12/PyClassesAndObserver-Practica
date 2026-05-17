@@ -33,6 +33,6 @@ o con
 Instala dependencias con 
 ```bash
 pip install -r requirements.txt.
-```
+
 Edita README.md y revisa la seccion Crear el entorno virtual con los comandos que usaste.
 Haz commit y push de tu cambio.
