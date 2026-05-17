@@ -1,32 +1,38 @@
-# Práctica: Clases y Patrón Observer en Python
+# Nombre del Proyecto
 
-Este repositorio contiene la implementación de una práctica enfocada en el uso de Programación Orientada a Objetos (Clases) y el patrón de diseño Observer en Python.
+Breve descripción del proyecto.
 
 ## Instalación
 
-Sigue estos pasos para configurar el entorno de desarrollo en tu máquina local.
+Sigue estos pasos para configurar el entorno de desarrollo:
+
+### 1. Crear el entorno virtual
+
+Crea un entorno virtual llamado `.venv` ejecutando:
+
 ```bash
 
+python3 -m venv .venv
+
+```
+### 2. Pasos sugeridos
+En tu computador, ejecuta 
+```bash
+python3 -m venv .venv.
+```
+Activa el entorno con source 
+```bash
+.venv/bin/activate
+```
+o con 
+```bash
 .venv\Scripts\activate
+```
+ en Windows.
 
-pip install -r requirements.txt
-
-pytest
-
-## Pasos adicionales:
-
-Después de crear el archivo, ejecuta estos comandos en tu terminal:
-
+Instala dependencias con 
 ```bash
-# Si aún no has creado el archivo
-touch README.md
-
-# O si quieres editarlo directamente
-nano README.md
-# o
-code README.md
-# o el editor que uses
-
-git add README.md
-git commit -m "docs: agregar instrucciones de instalación completas"
-git push
+pip install -r requirements.txt.
+```
+Edita README.md y revisa la seccion Crear el entorno virtual con los comandos que usaste.
+Haz commit y push de tu cambio.
