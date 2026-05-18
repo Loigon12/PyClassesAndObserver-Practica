@@ -1,22 +1,14 @@
-from canal import CanalNoticias
-from suscriptor_email import SuscriptorEmail
-from suscriptor_sms import SuscriptorSMS
+from observer_practice.canal import CanalNoticias
+from observer_practice.suscriptores import SuscriptorEmail, SuscriptorSMS
 
-# Crear un canal de noticias
-canal = CanalNoticias()
+canal = CanalNoticias("Claro")
+suscriptor1 = SuscriptorEmail("Pacho")
+suscriptor2 = SuscriptorSMS("beto")
 
-# Crear suscriptores
-suscriptor_email = SuscriptorEmail("usuario@example.com")
-suscriptor_sms = SuscriptorSMS("+1234567890")
+canal.suscribir(suscriptor1)
+canal.suscribir(suscriptor2)
 
-# Suscribir ambos al canal xd
-canal.suscribir(suscriptor_email)
-canal.suscribir(suscriptor_sms)
+canal.publicar("Hola, pasate a claro con tu mismo número")
 
-# Publicar un mensaje
-canal.publicar("¡Última noticia! Evento importante ocurrido hoy.")
-
-# Imprimir los mensajes recibidos
-print("\n--- Mensajes Recibidos ---")
-print(f"Email: {suscriptor_email.mensaje_recibido}")
-print(f"SMS: {suscriptor_sms.mensaje_recibido}")
+print(suscriptor1.mensajes)
+print(suscriptor2.mensajes)
