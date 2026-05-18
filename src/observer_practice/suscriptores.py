@@ -1,4 +1,4 @@
-class SuscriptorEmail:
+class SuscriptorEmail():
     def __init__(self, nombre):
         self.nombre = nombre
         self.canal = "email"
